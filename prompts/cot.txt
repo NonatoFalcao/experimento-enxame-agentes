@@ -1,0 +1,5 @@
+Question 1: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?
+
+Answer 1: Natalia first sold 48 clips in April then half of that in May, half of 48 clips is 24 clips, therefore, 48+24 is equal to 72 clips.
+
+Question 2: John has five more roommates than twice as many as Bob. If Bob has 10 roommates, how many roommates does John have?

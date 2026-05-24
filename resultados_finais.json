@@ -1,0 +1,490 @@
+[
+  {
+    "problema_id": "gsm8k_0009",
+    "estrategia": "cot",
+    "k_tentativas": 1,
+    "respostas_brutas": [
+      460
+    ],
+    "voto_majoritario": 460,
+    "gabarito": 460,
+    "acertou": true,
+    "latencia_media_ms": 18973,
+    "latencia_total_ms": 18973,
+    "tokens_in_total": 77,
+    "tokens_out_total": 211
+  },
+  {
+    "problema_id": "gsm8k_0009",
+    "estrategia": "self_consistency",
+    "k_tentativas": 5,
+    "respostas_brutas": [
+      460,
+      460,
+      460,
+      460,
+      460
+    ],
+    "voto_majoritario": 460,
+    "gabarito": 460,
+    "acertou": true,
+    "latencia_media_ms": 17679,
+    "latencia_total_ms": 88395,
+    "tokens_in_total": 385,
+    "tokens_out_total": 1011
+  },
+  {
+    "problema_id": "gsm8k_0009",
+    "estrategia": "zero_shot",
+    "k_tentativas": 1,
+    "respostas_brutas": [
+      460
+    ],
+    "voto_majoritario": 460,
+    "gabarito": 460,
+    "acertou": true,
+    "latencia_media_ms": 17477,
+    "latencia_total_ms": 17477,
+    "tokens_in_total": 67,
+    "tokens_out_total": 204
+  },
+  {
+    "problema_id": "gsm8k_0004",
+    "estrategia": "cot",
+    "k_tentativas": 1,
+    "respostas_brutas": [
+      20
+    ],
+    "voto_majoritario": 20,
+    "gabarito": 20,
+    "acertou": true,
+    "latencia_media_ms": 19122,
+    "latencia_total_ms": 19122,
+    "tokens_in_total": 128,
+    "tokens_out_total": 293
+  },
+  {
+    "problema_id": "gsm8k_0004",
+    "estrategia": "self_consistency",
+    "k_tentativas": 5,
+    "respostas_brutas": [
+      20,
+      20,
+      20,
+      20,
+      20
+    ],
+    "voto_majoritario": 20,
+    "gabarito": 20,
+    "acertou": true,
+    "latencia_media_ms": 20319,
+    "latencia_total_ms": 101595,
+    "tokens_in_total": 640,
+    "tokens_out_total": 1297
+  },
+  {
+    "problema_id": "gsm8k_0004",
+    "estrategia": "zero_shot",
+    "k_tentativas": 1,
+    "respostas_brutas": [
+      20
+    ],
+    "voto_majoritario": 20,
+    "gabarito": 20,
+    "acertou": true,
+    "latencia_media_ms": 22804,
+    "latencia_total_ms": 22804,
+    "tokens_in_total": 118,
+    "tokens_out_total": 199
+  },
+  {
+    "problema_id": "gsm8k_0002",
+    "estrategia": "cot",
+    "k_tentativas": 1,
+    "respostas_brutas": [
+      70000
+    ],
+    "voto_majoritario": 70000,
+    "gabarito": 70000,
+    "acertou": true,
+    "latencia_media_ms": 18676,
+    "latencia_total_ms": 18676,
+    "tokens_in_total": 69,
+    "tokens_out_total": 246
+  },
+  {
+    "problema_id": "gsm8k_0002",
+    "estrategia": "self_consistency",
+    "k_tentativas": 5,
+    "respostas_brutas": [
+      70000,
+      70000,
+      70000,
+      70000,
+      70000
+    ],
+    "voto_majoritario": 70000,
+    "gabarito": 70000,
+    "acertou": true,
+    "latencia_media_ms": 21267,
+    "latencia_total_ms": 106337,
+    "tokens_in_total": 345,
+    "tokens_out_total": 1193
+  },
+  {
+    "problema_id": "gsm8k_0002",
+    "estrategia": "zero_shot",
+    "k_tentativas": 1,
+    "respostas_brutas": [
+      70000
+    ],
+    "voto_majoritario": 70000,
+    "gabarito": 70000,
+    "acertou": true,
+    "latencia_media_ms": 18285,
+    "latencia_total_ms": 18285,
+    "tokens_in_total": 59,
+    "tokens_out_total": 228
+  },
+  {
+    "problema_id": "gsm8k_0003",
+    "estrategia": "cot",
+    "k_tentativas": 1,
+    "respostas_brutas": [
+      540
+    ],
+    "voto_majoritario": 540,
+    "gabarito": 540,
+    "acertou": true,
+    "latencia_media_ms": 13189,
+    "latencia_total_ms": 13189,
+    "tokens_in_total": 54,
+    "tokens_out_total": 130
+  },
+  {
+    "problema_id": "gsm8k_0003",
+    "estrategia": "self_consistency",
+    "k_tentativas": 5,
+    "respostas_brutas": [
+      540,
+      540,
+      540,
+      540,
+      540
+    ],
+    "voto_majoritario": 540,
+    "gabarito": 540,
+    "acertou": true,
+    "latencia_media_ms": 17166,
+    "latencia_total_ms": 85829,
+    "tokens_in_total": 270,
+    "tokens_out_total": 778
+  },
+  {
+    "problema_id": "gsm8k_0003",
+    "estrategia": "zero_shot",
+    "k_tentativas": 1,
+    "respostas_brutas": [
+      540
+    ],
+    "voto_majoritario": 540,
+    "gabarito": 540,
+    "acertou": true,
+    "latencia_media_ms": 19359,
+    "latencia_total_ms": 19359,
+    "tokens_in_total": 44,
+    "tokens_out_total": 202
+  },
+  {
+    "problema_id": "gsm8k_0006",
+    "estrategia": "cot",
+    "k_tentativas": 1,
+    "respostas_brutas": [
+      260
+    ],
+    "voto_majoritario": 260,
+    "gabarito": 260,
+    "acertou": true,
+    "latencia_media_ms": 23083,
+    "latencia_total_ms": 23083,
+    "tokens_in_total": 61,
+    "tokens_out_total": 219
+  },
+  {
+    "problema_id": "gsm8k_0006",
+    "estrategia": "self_consistency",
+    "k_tentativas": 4,
+    "respostas_brutas": [
+      260,
+      260,
+      208,
+      260
+    ],
+    "voto_majoritario": 260,
+    "gabarito": 260,
+    "acertou": true,
+    "latencia_media_ms": 17523,
+    "latencia_total_ms": 70092,
+    "tokens_in_total": 244,
+    "tokens_out_total": 798
+  },
+  {
+    "problema_id": "gsm8k_0006",
+    "estrategia": "zero_shot",
+    "k_tentativas": 1,
+    "respostas_brutas": [
+      260
+    ],
+    "voto_majoritario": 260,
+    "gabarito": 260,
+    "acertou": true,
+    "latencia_media_ms": 16951,
+    "latencia_total_ms": 16951,
+    "tokens_in_total": 51,
+    "tokens_out_total": 186
+  },
+  {
+    "problema_id": "gsm8k_0008",
+    "estrategia": "cot",
+    "k_tentativas": 1,
+    "respostas_brutas": [
+      45
+    ],
+    "voto_majoritario": 45,
+    "gabarito": 45,
+    "acertou": true,
+    "latencia_media_ms": 24423,
+    "latencia_total_ms": 24423,
+    "tokens_in_total": 121,
+    "tokens_out_total": 374
+  },
+  {
+    "problema_id": "gsm8k_0008",
+    "estrategia": "self_consistency",
+    "k_tentativas": 5,
+    "respostas_brutas": [
+      45,
+      4,
+      4,
+      4,
+      4
+    ],
+    "voto_majoritario": 4,
+    "gabarito": 45,
+    "acertou": false,
+    "latencia_media_ms": 22516,
+    "latencia_total_ms": 112578,
+    "tokens_in_total": 605,
+    "tokens_out_total": 1866
+  },
+  {
+    "problema_id": "gsm8k_0008",
+    "estrategia": "zero_shot",
+    "k_tentativas": 1,
+    "respostas_brutas": [
+      45
+    ],
+    "voto_majoritario": 45,
+    "gabarito": 45,
+    "acertou": true,
+    "latencia_media_ms": 27253,
+    "latencia_total_ms": 27253,
+    "tokens_in_total": 111,
+    "tokens_out_total": 403
+  },
+  {
+    "problema_id": "gsm8k_0007",
+    "estrategia": "cot",
+    "k_tentativas": 1,
+    "respostas_brutas": [
+      160
+    ],
+    "voto_majoritario": 160,
+    "gabarito": 160,
+    "acertou": true,
+    "latencia_media_ms": 24450,
+    "latencia_total_ms": 24450,
+    "tokens_in_total": 86,
+    "tokens_out_total": 423
+  },
+  {
+    "problema_id": "gsm8k_0007",
+    "estrategia": "self_consistency",
+    "k_tentativas": 5,
+    "respostas_brutas": [
+      160,
+      160,
+      160,
+      160,
+      160
+    ],
+    "voto_majoritario": 160,
+    "gabarito": 160,
+    "acertou": true,
+    "latencia_media_ms": 26023,
+    "latencia_total_ms": 130115,
+    "tokens_in_total": 430,
+    "tokens_out_total": 1683
+  },
+  {
+    "problema_id": "gsm8k_0007",
+    "estrategia": "zero_shot",
+    "k_tentativas": 1,
+    "respostas_brutas": [
+      160
+    ],
+    "voto_majoritario": 160,
+    "gabarito": 160,
+    "acertou": true,
+    "latencia_media_ms": 17920,
+    "latencia_total_ms": 17920,
+    "tokens_in_total": 76,
+    "tokens_out_total": 305
+  },
+  {
+    "problema_id": "gsm8k_0000",
+    "estrategia": "cot",
+    "k_tentativas": 1,
+    "respostas_brutas": [
+      18
+    ],
+    "voto_majoritario": 18,
+    "gabarito": 18,
+    "acertou": true,
+    "latencia_media_ms": 17453,
+    "latencia_total_ms": 17453,
+    "tokens_in_total": 84,
+    "tokens_out_total": 209
+  },
+  {
+    "problema_id": "gsm8k_0000",
+    "estrategia": "self_consistency",
+    "k_tentativas": 5,
+    "respostas_brutas": [
+      18,
+      18,
+      18,
+      18,
+      18
+    ],
+    "voto_majoritario": 18,
+    "gabarito": 18,
+    "acertou": true,
+    "latencia_media_ms": 16992,
+    "latencia_total_ms": 84961,
+    "tokens_in_total": 420,
+    "tokens_out_total": 851
+  },
+  {
+    "problema_id": "gsm8k_0000",
+    "estrategia": "zero_shot",
+    "k_tentativas": 1,
+    "respostas_brutas": [
+      18
+    ],
+    "voto_majoritario": 18,
+    "gabarito": 18,
+    "acertou": true,
+    "latencia_media_ms": 25944,
+    "latencia_total_ms": 25944,
+    "tokens_in_total": 74,
+    "tokens_out_total": 195
+  },
+  {
+    "problema_id": "gsm8k_0005",
+    "estrategia": "cot",
+    "k_tentativas": 1,
+    "respostas_brutas": [
+      16
+    ],
+    "voto_majoritario": 16,
+    "gabarito": 64,
+    "acertou": false,
+    "latencia_media_ms": 19156,
+    "latencia_total_ms": 19156,
+    "tokens_in_total": 74,
+    "tokens_out_total": 293
+  },
+  {
+    "problema_id": "gsm8k_0005",
+    "estrategia": "self_consistency",
+    "k_tentativas": 4,
+    "respostas_brutas": [
+      16,
+      16,
+      16,
+      16
+    ],
+    "voto_majoritario": 16,
+    "gabarito": 64,
+    "acertou": false,
+    "latencia_media_ms": 19743,
+    "latencia_total_ms": 78971,
+    "tokens_in_total": 296,
+    "tokens_out_total": 823
+  },
+  {
+    "problema_id": "gsm8k_0005",
+    "estrategia": "zero_shot",
+    "k_tentativas": 1,
+    "respostas_brutas": [
+      16
+    ],
+    "voto_majoritario": 16,
+    "gabarito": 64,
+    "acertou": false,
+    "latencia_media_ms": 22875,
+    "latencia_total_ms": 22875,
+    "tokens_in_total": 64,
+    "tokens_out_total": 231
+  },
+  {
+    "problema_id": "gsm8k_0001",
+    "estrategia": "cot",
+    "k_tentativas": 1,
+    "respostas_brutas": [
+      3
+    ],
+    "voto_majoritario": 3,
+    "gabarito": 3,
+    "acertou": true,
+    "latencia_media_ms": 16093,
+    "latencia_total_ms": 16093,
+    "tokens_in_total": 46,
+    "tokens_out_total": 215
+  },
+  {
+    "problema_id": "gsm8k_0001",
+    "estrategia": "self_consistency",
+    "k_tentativas": 5,
+    "respostas_brutas": [
+      3,
+      3,
+      3,
+      3,
+      3
+    ],
+    "voto_majoritario": 3,
+    "gabarito": 3,
+    "acertou": true,
+    "latencia_media_ms": 13310,
+    "latencia_total_ms": 66548,
+    "tokens_in_total": 230,
+    "tokens_out_total": 722
+  },
+  {
+    "problema_id": "gsm8k_0001",
+    "estrategia": "zero_shot",
+    "k_tentativas": 1,
+    "respostas_brutas": [
+      3
+    ],
+    "voto_majoritario": 3,
+    "gabarito": 3,
+    "acertou": true,
+    "latencia_media_ms": 21761,
+    "latencia_total_ms": 21761,
+    "tokens_in_total": 36,
+    "tokens_out_total": 144
+  }
+]
