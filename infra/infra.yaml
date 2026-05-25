@@ -1,0 +1,90 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: >
+  Infraestrutura do Tema 8 - Simulador de Enxame de Agentes para Benchmarking.
+  Cria a fila SQS principal, a Dead Letter Queue (DLQ), a tabela DynamoDB de
+  resultados/checkpoint e o bucket S3 de saida. Equivale ao que foi criado
+  manualmente pelo console da AWS durante o desenvolvimento.
+
+Parameters:
+  Prefixo:
+    Type: String
+    Default: gsm8k
+    Description: Prefixo usado nos nomes dos recursos.
+
+  MaxRecebimentos:
+    Type: Number
+    Default: 3
+    Description: Numero de tentativas antes de mandar a mensagem para a DLQ.
+
+  VisibilityTimeout:
+    Type: Number
+    Default: 300
+    Description: Visibility timeout da fila principal, em segundos (5 min).
+
+Resources:
+
+  # Fila de mensagens mortas: recebe tarefas que falharam apos N tentativas.
+  DeadLetterQueue:
+    Type: AWS::SQS::Queue
+    Properties:
+      QueueName: !Sub "${Prefixo}-tasks-dlq"
+      MessageRetentionPeriod: 1209600   # 14 dias (maximo), para auditoria
+
+  # Fila principal: o dispatcher publica aqui e os workers consomem.
+  TaskQueue:
+    Type: AWS::SQS::Queue
+    Properties:
+      QueueName: !Sub "${Prefixo}-tasks"
+      VisibilityTimeout: !Ref VisibilityTimeout
+      RedrivePolicy:
+        deadLetterTargetArn: !GetAtt DeadLetterQueue.Arn
+        maxReceiveCount: !Ref MaxRecebimentos
+
+  # Tabela de resultados e checkpoint de idempotencia.
+  ResultsTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: !Sub "${Prefixo}-results"
+      BillingMode: PAY_PER_REQUEST     # on-demand, sem planejar capacidade
+      AttributeDefinitions:
+        - AttributeName: problema_id
+          AttributeType: S
+        - AttributeName: estrategia_tentativa
+          AttributeType: S
+      KeySchema:
+        - AttributeName: problema_id
+          KeyType: HASH                # partition key
+        - AttributeName: estrategia_tentativa
+          KeyType: RANGE               # sort key (ex.: cot#1, self_consistency#3)
+
+  # Bucket de saida: guarda o resultados_finais.json consolidado.
+  ResultsBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: !Sub "${Prefixo}-results-${AWS::AccountId}-${AWS::Region}"
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: true
+        BlockPublicPolicy: true
+        IgnorePublicAcls: true
+        RestrictPublicBuckets: true
+
+Outputs:
+  FilaPrincipalUrl:
+    Description: URL da fila SQS principal (use no dispatcher e no worker).
+    Value: !Ref TaskQueue
+
+  FilaPrincipalArn:
+    Description: ARN da fila principal.
+    Value: !GetAtt TaskQueue.Arn
+
+  DlqUrl:
+    Description: URL da Dead Letter Queue.
+    Value: !Ref DeadLetterQueue
+
+  TabelaResultados:
+    Description: Nome da tabela DynamoDB.
+    Value: !Ref ResultsTable
+
+  BucketResultados:
+    Description: Nome do bucket S3 de saida.
+    Value: !Ref ResultsBucket
